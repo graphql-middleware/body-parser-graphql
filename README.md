@@ -1,5 +1,5 @@
 # body-parser-graphql [![npm](https://img.shields.io/npm/v/body-parser-graphql.svg?style=for-the-badge)](https://www.npmjs.com/package/body-parser-graphql)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge)](https://github.com/semantic-release/semantic-release)[![CircleCI](https://img.shields.io/circleci/project/github/supergraphql/body-parser-graphql.svg?style=for-the-badge)](https://circleci.com/gh/supergraphql/body-parser-graphql)[![Renovate badge](https://img.shields.io/badge/renovate-enabled-brightgreen.svg?style=for-the-badge)](https://renovateapp.com/)[![Code Climate](https://img.shields.io/codeclimate/maintainability/supergraphql/body-parser-graphql.svg?style=for-the-badge)](https://codeclimate.com/github/supergraphql/body-parser-graphql)[![Coveralls](https://img.shields.io/coveralls/github/supergraphql/body-parser-graphql.svg?style=for-the-badge)](https://coveralls.io/github/supergraphql/body-parser-graphql)  
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge)](https://github.com/semantic-release/semantic-release)[![CircleCI](https://img.shields.io/circleci/project/github/supergraphql/body-parser-graphql.svg?style=for-the-badge)](https://circleci.com/gh/supergraphql/body-parser-graphql)[![Code Climate](https://img.shields.io/codeclimate/maintainability/supergraphql/body-parser-graphql.svg?style=for-the-badge&label=code%20quality)](https://codeclimate.com/github/supergraphql/body-parser-graphql)[![Coveralls](https://img.shields.io/coveralls/github/supergraphql/body-parser-graphql.svg?style=for-the-badge)](https://coveralls.io/github/supergraphql/body-parser-graphql)[![Renovate badge](https://img.shields.io/badge/renovate-enabled-e10079.svg?style=for-the-badge)](https://renovateapp.com/)  
 Express body-parser that supports the `application/graphql` MIME type.
 
 ## How does it work?
@@ -65,5 +65,5 @@ app.use(bodyParserGraphQL())
 
 <hr>
 <p align="center">
-  <img src="https://img.shields.io/badge/built-with_love-blue.svg?style=for-the-badge"/><a href="https://github.com/kbrandwijk" target="-_blank"><img src="https://img.shields.io/badge/by-kim_brandwijk-blue.svg?style=for-the-badge"/></a>
+  <img src="https://img.shields.io/badge/built-with_%F0%9F%92%99-blue.svg?style=for-the-badge"/><a href="https://github.com/kbrandwijk" target="-_blank"><img src="https://img.shields.io/badge/by-kim_brandwijk-blue.svg?style=for-the-badge"/></a>
 </p>
