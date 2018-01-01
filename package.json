@@ -51,7 +51,6 @@
     "@types/node": "8.5.2",
     "chai": "4.1.2",
     "chai-http": "3.0.0",
-    "condition-circle": "2.0.1",
     "coveralls": "3.0.0",
     "cucumber": "3.2.0",
     "cucumber-html-reporter": "3.0.4",
@@ -70,7 +69,6 @@
   },
   "homepage": "https://github.com/supergraphql/body-parser-graphql#readme",
   "release": {
-    "branch": "master",
-    "verifyConditions": "condition-circle"
+    "branch": "master"
   }
 }
