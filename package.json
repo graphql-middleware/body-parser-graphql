@@ -1,0 +1,71 @@
+{
+  "name": "body-parser-graphql",
+  "version": "0.0.0-development",
+  "description": "GraphQL server middleware to support application/graphql requests",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf dist && tsc -d",
+    "test": "nyc cucumber-js --compiler ts:ts-node/register test/features/ -r test/step_definitions/ -f json:test/report/cucumber_report.json",
+    "posttest": "node test/createReport.js && nyc report --reporter=text-lcov | coveralls",
+    "vscodetest": "nyc --reporter=lcov --reporter=text-summary cucumber-js --compiler ts:ts-node/register test/features/ -r test/step_definitions/ -f ./test/tap-formatter.js",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [
+    "graphql",
+    "express"
+  ],
+  "author": "Kim Brandwijk <kim.brandwijk@gmail.com>",
+  "license": "MIT",
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "text",
+      "lcov",
+      "json"
+    ],
+    "all": true,
+    "sourceMap": true,
+    "instrument": true
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2"
+  },
+  "devDependencies": {
+    "@types/chai": "4.0.10",
+    "@types/chai-http": "3.0.3",
+    "@types/cucumber": "3.1.1",
+    "@types/express": "4.11.0",
+    "@types/node": "8.5.2",
+    "chai": "4.1.2",
+    "chai-http": "3.0.0",
+    "coveralls": "3.0.0",
+    "cucumber": "3.2.0",
+    "cucumber-html-reporter": "3.0.4",
+    "express": "4.16.2",
+    "nyc": "11.4.1",
+    "semantic-release": "12.0.0",
+    "ts-node": "4.1.0",
+    "typescript": "2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supergraphql/body-parser-graphql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/supergraphql/body-parser-graphql/issues"
+  },
+  "homepage": "https://github.com/supergraphql/body-parser-graphql#readme"
+}
