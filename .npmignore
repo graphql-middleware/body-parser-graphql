@@ -3,3 +3,4 @@ src
 renovate.json
 .codeclimate.yml
 test
+yarn.lock
