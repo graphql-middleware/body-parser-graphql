@@ -82,9 +82,9 @@
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.1.2.tgz#f1af664769cfb50af805431c407425ed619daa21"
 
-"@types/cucumber@3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@types/cucumber/-/cucumber-3.2.1.tgz#4269502cc1f8cc4b4bfe4fe4bc3bbe19226600bb"
+"@types/cucumber@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@types/cucumber/-/cucumber-3.2.2.tgz#4707983d840e8d09885d400d770e33ff06eeb2a2"
 
 "@types/express-serve-static-core@*":
   version "4.11.0"
