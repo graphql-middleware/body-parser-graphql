@@ -10,7 +10,7 @@ export interface BodyParserJSONOptions {
   verify?: any,
 }
 
-export const bodyParserGraphQL: () => RequestHandler = (options?: BodyParserJSONOptions) => (
+export const bodyParserGraphQL: (options?: BodyParserJSONOptions) => RequestHandler = (options?: BodyParserJSONOptions) => (
   req: Request,
   res: Response,
   next: NextFunction
