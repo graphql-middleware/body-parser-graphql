@@ -1,7 +1,16 @@
 import * as bodyParser from 'body-parser'
 import { Request, Response, NextFunction, RequestHandler } from 'express'
 
-export const bodyParserGraphQL: () => RequestHandler = () => (
+export interface BodyParserJSONOptions {
+  limit?: number | string,
+  inflate?: boolean,
+  reviver?: any,
+  strict?: boolean,
+  type?: string,
+  verify?: any,
+}
+
+export const bodyParserGraphQL: (options?: BodyParserJSONOptions) => RequestHandler = (options?: BodyParserJSONOptions) => (
   req: Request,
   res: Response,
   next: NextFunction
@@ -15,7 +24,7 @@ export const bodyParserGraphQL: () => RequestHandler = () => (
       next()
     })
   } else {
-    bodyParser.json()(req, res, next)
+    bodyParser.json(options)(req, res, next)
   }
 }
 
