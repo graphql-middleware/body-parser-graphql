@@ -55,7 +55,7 @@
     "cucumber": "3.2.1",
     "cucumber-html-reporter": "4.0.1",
     "express": "4.16.2",
-    "nyc": "11.4.1",
+    "nyc": "14.1.1",
     "semantic-release": "12.4.1",
     "ts-node": "5.0.0",
     "typescript": "2.7.2"
